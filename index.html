@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- GOOGLE FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+		<title>Title in the tab</title>
+
+		
+		<!-- external CSS link -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/c31a3ebc2d.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="text-center">
+
+		
+		<!-- PROJECT TITLE -->
+		<main class="container mx-auto my-20">
+
+			<div>
+				<h1 class="font-sans text-4xl mb-5">Weather App</h1>
+				<!-- <form action=""> -->
+					<input type="text" id="quote" placeholder="enter region" class="h-10 border-2 rounded-lg border-slate-300 px-4">
+					<button id="weatherDetails" class="h-10 px-6 rounded-lg 2"><i class="fa-solid fa-magnifying-glass"></i></button>	
+				<!-- </form> -->
+			</div>
+			
+		</main>
+		
+		<!-- WEATHER LOCATION -->
+		<h2 id="location" class="font-sans text-2xl mb-4"></h2>
+		<span id="date"></span>
+	
+		<!-- WEATHER DETAILS -->
+		<div class="flex gap-6 mb-10 mt-10 justify-center text-center weather_details_big_con">
+			<div class="flex weather_details_con">
+				<div class="weather_details">
+					<span>Temperature</span>
+					<h3 id="temp" class="'font-sans text-4xl"></h3>
+				</div>
+		
+				<div class="weather_details flex flex-col justify-center">
+					<span>Cloud</span>
+					<div class="w-20 h-20 container mx-auto currentDay">
+						<img src="" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<div class="weather_details">
+				<span>Humidity</span>
+				<h3 id="humidity" class="font-sans text-4xl"></h3>
+			</div>
+		</div>
+		
+
+		<!-- SEVEN DAYS FORCAST		 -->
+		<div class="container mx-auto text-left px-4 md:px-10 mb-20">
+			<span class="next_days">Next 7 days forcast</span>
+			<ul class="grid grid-cols-1 gap-4 md:grid-cols-2 mt-2">
+				<li class="daily_details">
+					<h3 id="day-con1" class="text-2xl font-sans"></h3>
+					<div class="flex flex-col mx-6">
+						<span id="comment-con1"></span>
+						<span id="temp-con1"></span>
+					</div>
+
+					<div id="image1" class="weather_icon justify-self-center" > 
+						<img src="" alt=""> 
+					</div>
+				</li>
+				
+				<li class="daily_details">
+					<h3 id="day-con2" class="text-2xl font-sans"></h3>
+					<div class="flex flex-col mx-6">
+						<span id="comment-con2"></span>
+						<span id="temp-con2"></span>
+					</div>
+
+					<div id="image2" class="weather_icon"> 
+						<img src="" alt=""> 
+					</div>
+					
+				</li>
+
+				<li class="daily_details">
+					<h3 id="day-con3" class="text-2xl font-sans"></h3>
+					<div class="flex flex-col mx-6">
+						<span id="comment-con3"></span>
+						<span id="temp-con3"></span>
+					</div>
+
+					<div id="image3" class="weather_icon"> 
+						<img src="" alt=""> 
+					</div>
+					
+				</li>
+
+				<li class="daily_details">
+					<h3 id="day-con4" class="text-2xl font-sans"></h3>
+					<div class="flex flex-col mx-6">
+						<span id="comment-con4"></span>
+						<span id="temp-con4"></span>
+					</div>
+
+					<div id="image4" class="weather_icon"> 
+						<img src="" alt=""> 
+					</div>
+				</li>
+
+				<li class="daily_details">
+					<h3 id="day-con5" class="text-2xl font-sans"></h3>
+					<div class="flex flex-col mx-6">
+						<span id="comment-con5"></span>
+						<span id="temp-con5"></span>
+					</div>
+					
+					<div id="image5" class="weather_icon"> 
+						<img src="" alt=""> 
+					</div>
+				</li>
+
+				<li class="daily_details">
+					<h3 id="day-con6" class="text-2xl font-sans"></h3>
+					<div class="flex flex-col mx-6">
+						<span id="comment-con6"></span>
+						<span id="temp-con6"></span>
+					</div>
+
+					<div id="image6" class="weather_icon"> 
+						<img src="" alt=""> 
+					</div>
+			
+				</li>
+			</ul>
+		</div>
+
+		<!-- <div class="image container flex gap-20">
+			<img class="day_image" src="" alt="">
+		</div> -->
+
+		<footer>
+			<p>Developed by <a href="https://s-abdullahi.netlify.app/">S-Abdullahi</a></p>
+		</footer>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
